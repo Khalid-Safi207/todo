@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f9f9f9;
+}
+.container {
+  width: 70vw;
+  height: 90vh;
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 4px 2px 10px;
+}
+.container header {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #7d7d7d;
+}
+.container h2 {
+  text-transform: capitalize;
+  font-weight: 300;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container span {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  padding: 5px 5px;
+  color: #7d7d7d;
+}
+.task-name {
+  border: none;
+  border-bottom: 2px solid #7d7d7d;
+  padding: 8px 5px;
+  outline: none;
+  font-size: 17px;
+  margin-top: 15px;
+}
+.add-btn {
+  width: fit-content;
+  margin-top: 15px;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  border: none;
+  background-color: #209b8e;
+  color: white;
+  cursor: pointer;
+}
+.container main {
+  flex: 2;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.container main h1 {
+  text-transform: capitalize;
+  font-weight: 400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.colors {
+  width: 100%;
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+.red {
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  border-radius: 1px;
+  background-color: crimson;
+  text-align: center;
+  color: white;
+  font-size: 17px;
+}
+.aque {
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 1px;
+  color: white;
+  background-color: #209b8e;
+  font-size: 17px;
+}
+.filter {
+  border: none;
+  border-bottom: 2px solid #7d7d7d;
+  padding: 8px 5px;
+  outline: none;
+  font-size: 17px;
+  margin-top: 15px;
+}
+.task-con {
+  padding: 20px 0;
+  overflow-y: scroll;
+  max-height: 20%;
+}
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #209b8e;
+  padding: 10px;
+  color: white;
+  margin-top: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-height: 30px;
+}
+.task span,
+.trash {
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+}
